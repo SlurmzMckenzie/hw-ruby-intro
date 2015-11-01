@@ -38,7 +38,8 @@ end
 
 def binary_multiple_of_4? s
 	# YOUR CODE HERE
-	if s.match(/\A[+-]?\d+?(\.\d+)?\Z/) == nil then return false end
+	#if s.match(/\A[+-]?\d+?(\.\d+)?\Z/) == nil then return false end
+	if s.match(/\A[0-1]+\Z/) == nil then return false end
 	s.to_i % 4 === 0
 end
 
